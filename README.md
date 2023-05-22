@@ -15,7 +15,7 @@ VanillaNet is an innovative neural network architecture that focuses on **simpli
 
 ## Comparison of Depth and Speed
 
-<img src="pic/depth.PNG" width="480px"/> <img src="pic/speed.PNG" width="400px"/>
+<img src="pic/depth.PNG" width="360px"/> <img src="pic/speed.PNG" width="300px"/>
 
 VanillaNet, in its robust simplicity, offers comparable precision to prevalent computer vision foundation models, yet boasts a **reduced depth and enhanced processing speed**:
 - **9-layers'** VanillaNet achieves about **80%** Top-1 accuracy with **3.59ms**, over **100%** speed increase compared to ResNet-50 (**7.64ms**).
@@ -25,7 +25,7 @@ VanillaNet, in its robust simplicity, offers comparable precision to prevalent c
 
 | Framework | Backbone | FLOPs(G) | #params(M) | FPS | AP<sup>b</sup> | AP<sup>m</sup> |
 |:---:|:---:|:---:|:---:| :---:|:---:|:---:|
-| ReTinaNet | Swin-T| 245 | 38.5 | 27.5 | 41.5 | - |
+| RetinaNet | Swin-T| 245 | 38.5 | 27.5 | 41.5 | - |
 |  | VanillaNet-11 | 386 | 67.0 | 30.8 | 41.8 | - |
 | Mask RCNN | ConvNeXtV2-N | 221 | 35.2 | 31.7 | 42.7 | 38.9 |
 |  | [Swin-T](https://github.com/open-mmlab/mmdetection/tree/main/configs/swin) | 267 | 47.8 | 28.2 | 42.7 | 39.3 |
@@ -58,7 +58,7 @@ VanillaNet achieves a higher Frames Per Second (FPS) in **detection** and **segm
 | VanillaNet-12 | 54.3 | 11.1 | 3.82 | 81.55 | - |
 | VanillaNet-13 | 58.6 | 11.9 | 4.26 | 82.05 | - |
 | VanillaNet-13-1.5x | 127.8 | 26.5 | 7.83 | 82.53 | - |
-| VanillaNet-13-1.5x&dagger; | 127.8 | 9.72 | 198M | 83.11 | - |
+| VanillaNet-13-1.5x&dagger; | 127.8 | 48.9 | 9.72 | 83.11 | - |
 
 ## Installation
 
