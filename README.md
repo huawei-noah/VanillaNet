@@ -1,7 +1,7 @@
 # VanillaNet: the Power of Minimalism in Deep Learning 
 <p align="left">
-<a href="https://arxiv.org/abs/2303.16900" alt="arXiv">
-    <img src="https://img.shields.io/badge/arXiv-2203.16900-b31b1b.svg?style=flat" /></a>
+<a href="https://arxiv.org/abs/2305.xxxxx" alt="arXiv">
+    <img src="https://img.shields.io/badge/arXiv-2205.xxxxx-b31b1b.svg?style=flat" /></a>
 </p>
 
 
@@ -211,4 +211,4 @@ This repository is built using the [timm](https://github.com/rwightman/pytorch-i
 This project is released under the MIT license. Please see the [LICENSE](License) file for more information.
 
 ### Citation
-If our work is useful for your research, please consider citing:
+If our work is useful for your research, please consider citation.
