@@ -54,7 +54,7 @@ VanillaNet achieves a higher Frames Per Second (FPS) in **detection** and **segm
 | VanillaNet-12 | 54.3 | 11.1 | 3.82 | 81.55 | - |
 | VanillaNet-13 | 58.6 | 11.9 | 4.26 | 82.05 | - |
 | VanillaNet-13-1.5x | 127.8 | 26.5 | 7.83 | 82.53 | - |
-| VanillaNet-13-1.5x&dagger; | 127.8 | 9.72 | 198M | 83.11 | - |
+| VanillaNet-13-1.5x&dagger; | 127.8 | 48.5 | 9.72 | 83.11 | - |
 
 ## Installation
 
