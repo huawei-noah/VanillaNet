@@ -2,7 +2,7 @@
 
 
 Official PyTorch implementation of **VanillaNet**, from the following paper:\
-VanillaNet: the Power of Minimalism in Deep Learning
+VanillaNet: the Power of Minimalism in Deep Learning\
 Hanting chen, [Yunhe Wang](https://www.wangyunhe.site/), Jianyuan Guo and Dacheng Tao
 
 <img src="pic/structure.PNG" width="800px"/>
