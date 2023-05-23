@@ -22,14 +22,14 @@ VanillaNet, in its robust simplicity, offers comparable precision to prevalent c
 - **13 layers'** VanillaNet achieves about **83%** Top-1 accuracy with **9.72ms**, over **100%** speed increase compared to Swin-T (**20.25ms**).
 
 ## Downstream Tasks
-
 | Framework | Backbone | FLOPs(G) | #params(M) | FPS | AP<sup>b</sup> | AP<sup>m</sup> |
 |:---:|:---:|:---:|:---:| :---:|:---:|:---:|
 | RetinaNet | Swin-T | 245 | 38.5 | 27.5 | 41.5 | - |
-|  | VanillaNet-11 | 386 | 67.0 | 30.8 | 41.8 | - |
-| Mask RCNN | ConvNeXtV2-N | 221 | 35.2 | 31.7 | 42.7 | 38.9 |
+|  | VanillaNet-13 | 397 | 74.6 | 29.8 | 41.8 | - |
+| Mask RCNN | ConvNeXt-T | 262 | 48.1 | 31.7 | 42.7 | 38.9 |
 |  | [Swin-T](https://github.com/open-mmlab/mmdetection/tree/main/configs/swin) | 267 | 47.8 | 28.2 | 42.7 | 39.3 |
-|  | VanillaNet-11 | 404 | 107.5 | 33.6 | 42.9 | 39.6 |
+|  | VanillaNet-13 | 421 | 76.3 | 32.6 | 42.9 | 39.6 |
+
 
 VanillaNet achieves a higher Frames Per Second (FPS) in **detection** and **segmentation** tasks.
 
