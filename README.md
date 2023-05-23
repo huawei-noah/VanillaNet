@@ -1,12 +1,12 @@
 # VanillaNet: the Power of Minimalism in Deep Learning 
 <p align="left">
-<a href="https://arxiv.org/abs/2305.xxxxx" alt="arXiv">
-    <img src="https://img.shields.io/badge/arXiv-2205.xxxxx-b31b1b.svg?style=flat" /></a>
+<a href="https://arxiv.org/abs/2305.12972" alt="arXiv">
+    <img src="https://img.shields.io/badge/arXiv-2305.12972-b31b1b.svg?style=flat" /></a>
 </p>
 
 
 Official PyTorch implementation of **VanillaNet**, from the following paper:\
-[VanillaNet: the Power of Minimalism in Deep Learning ](https://arxiv.org/abs/)\
+[VanillaNet: the Power of Minimalism in Deep Learning ](https://arxiv.org/abs/2305.12972)\
 Hanting chen, [Yunhe Wang](https://www.wangyunhe.site/), Jianyuan Guo and Dacheng Tao
 
 <img src="pic/structure.PNG" width="800px"/>
@@ -25,11 +25,11 @@ VanillaNet, in its robust simplicity, offers comparable precision to prevalent c
 
 | Framework | Backbone | FLOPs(G) | #params(M) | FPS | AP<sup>b</sup> | AP<sup>m</sup> |
 |:---:|:---:|:---:|:---:| :---:|:---:|:---:|
-| RetinaNet | Swin-T| 245 | 38.5 | 27.5 | 41.5 | - |
-|  | VanillaNet-11 | 386 | 67.0 | 30.8 | 41.8 | - |
+| RetinaNet | Swin-T | 245 | 38.5 | 27.5 | 41.5 | - |
+|  | VanillaNet-13 | 386 | 67.0 | 30.4 | 41.8 | - |
 | Mask RCNN | ConvNeXtV2-N | 221 | 35.2 | 31.7 | 42.7 | 38.9 |
 |  | [Swin-T](https://github.com/open-mmlab/mmdetection/tree/main/configs/swin) | 267 | 47.8 | 28.2 | 42.7 | 39.3 |
-|  | VanillaNet-11 | 404 | 107.5 | 33.6 | 42.9 | 39.6 |
+|  | VanillaNet-13 | 404 | 107.5 | 33.2 | 42.9 | 39.6 |
 
 VanillaNet achieves a higher Frames Per Second (FPS) in **detection** and **segmentation** tasks.
 
@@ -211,4 +211,12 @@ This repository is built using the [timm](https://github.com/rwightman/pytorch-i
 This project is released under the MIT license. Please see the [LICENSE](License) file for more information.
 
 ### Citation
-If our work is useful for your research, please consider citation.
+If our work is useful for your research, please consider citing:
+```
+@article{chen2023vanillanet,
+  title={VanillaNet: the Power of Minimalism in Deep Learning},
+  author={Chen, Hanting and Wang, Yunhe and Guo, Jianyuan and Tao, Dacheng},
+  journal={arXiv preprint arXiv:2305.12972},
+  year={2023}
+}
+```
