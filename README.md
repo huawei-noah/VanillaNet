@@ -26,8 +26,7 @@ VanillaNet, in its robust simplicity, offers comparable precision to prevalent c
 |:---:|:---:|:---:|:---:| :---:|:---:|:---:|
 | RetinaNet | Swin-T | 245 | 38.5 | 27.5 | 41.5 | - |
 |  | VanillaNet-13 | 397 | 74.6 | 29.8 | 41.8 | - |
-| Mask RCNN | ConvNeXt-T | 262 | 48.1 | 31.7 | 42.7 | 38.9 |
-|  | [Swin-T](https://github.com/open-mmlab/mmdetection/tree/main/configs/swin) | 267 | 47.8 | 28.2 | 42.7 | 39.3 |
+| Mask RCNN | [Swin-T](https://github.com/open-mmlab/mmdetection/tree/main/configs/swin) | 267 | 47.8 | 28.2 | 42.7 | 39.3 |
 |  | VanillaNet-13 | 421 | 76.3 | 32.6 | 42.9 | 39.6 |
 
 
