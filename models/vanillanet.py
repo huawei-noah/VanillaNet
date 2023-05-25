@@ -30,7 +30,7 @@ class activation(nn.ReLU):
         else:
             return self.bn(torch.nn.functional.conv2d(
                 super(activation, self).forward(x),
-                self.weight, padding=(self.act_num*2 + 1)//2, groups=self.dim))
+                self.weight, padding=self.act_num, groups=self.dim))
 
     def _fuse_bn_tensor(self, weight, bn):
         kernel = weight
