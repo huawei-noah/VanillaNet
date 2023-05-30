@@ -61,7 +61,7 @@ VanillaNet achieves a higher Frames Per Second (FPS) in **detection** and **segm
 
 ## Installation
 
-The results are produced with `torch==1.10.2+cu113 torchvision==0.11.3+cu113 timm==0.6.12`. Other verions might also work.
+The results are produced with `torch==1.10.2+cu113 torchvision==0.11.3+cu113 timm==0.6.12`. Other versions might also work.
 
 Install [Pytorch](https://pytorch.org/) and, [torchvision](https://pytorch.org/vision/stable/index.html) following official instructions.
 
