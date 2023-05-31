@@ -9,7 +9,7 @@ import torch
 import torchvision
 import time
 
-import models.vanillanet
+from models.vanillanet import *
 
 
 if __name__ == "__main__":
@@ -22,6 +22,7 @@ if __name__ == "__main__":
     
     net = vanillanet_5().cuda()
     net.eval()
+    net.switch_to_deploy()
     print(net)
     for img, target in data_loader_val:
         img = img.cuda()
