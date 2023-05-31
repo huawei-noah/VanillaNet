@@ -92,18 +92,6 @@ Download the [ImageNet-1K](http://image-net.org/) classification dataset and str
       img4.jpeg
 ```
 
-For pre-training on [ImageNet-22K](http://image-net.org/), download the dataset and structure the data as follows:
-```
-/path/to/imagenet-22k/
-  class1/
-    img1.jpeg
-  class2/
-    img2.jpeg
-  class3/
-    img3.jpeg
-  class4/
-    img4.jpeg
-```
 
 ## Testing
 
