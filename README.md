@@ -15,7 +15,7 @@ VanillaNet is an innovative neural network architecture that focuses on **simpli
 
 ## News
 
-**2023.06.02** In addition to the reported speed in the paper, we have also measured the speed with NVIDIA TensorRT on A100 and the speed on HUAWEI Ascend 910. The inference speed of VanillaNet superior to other counterparts. 🍺
+**2023.06.02** In addition to the reported speed in the paper, we have also measured the speed with NVIDIA TensorRT on A100 and the speed on HUAWEI Ascend 910. The inference speed of VanillaNet is superior to other counterparts. 🍺
 
 
 ## Comparison of Depth and Speed
