@@ -13,6 +13,11 @@ Hanting chen, [Yunhe Wang](https://www.wangyunhe.site/), Jianyuan Guo and Dachen
 
 VanillaNet is an innovative neural network architecture that focuses on **simplicity** and **efficiency**. Moving away from complex features such as **shortcuts** and **attention** mechanisms, VanillaNet uses a reduced number of layers while still **maintaining excellent performance**. This project showcases that it's possible to achieve effective results with a lean architecture, thereby setting a new path in the field of computer vision and challenging the status quo of foundation models. 
 
+## News
+
+**2023.06.02** In addition to the reported speed in the paper, we have also measured the speed with NVIDIA TensorRT on A100 and the speed on HUAWEI Ascend 910. The inference speed of VanillaNet superior to other counterparts. 🍺
+
+
 ## Comparison of Depth and Speed
 
 <img src="pic/depth.PNG" width="360px"/> <img src="pic/speed.PNG" width="300px"/>
@@ -20,6 +25,24 @@ VanillaNet is an innovative neural network architecture that focuses on **simpli
 VanillaNet achieves comparable performance to prevalent computer vision foundation models, yet boasts a **reduced depth and enhanced inference speed**:
 - **9-layers'** VanillaNet achieves about **80%** Top-1 accuracy with **3.59ms**, over **100%** speed increase compared to ResNet-50 (**7.64ms**).
 - **13 layers'** VanillaNet achieves about **83%** Top-1 accuracy with **9.72ms**, over **100%** speed increase compared to Swin-T (**20.25ms**).
+
+| name | Params(M) | FLOPs(B) | Lacency(ms) <br/>Pytorch <br/>A100 | Lacency(ms) <br/>MindSpore <br/>Ascend 910 | Lacency(ms) <br/>TRT FP32 <br/>A100 | Lacency(ms) <br/>TRT FP16 <br/>A100 | Acc(%) |
+|:---:|:---:|:---:|:---:| :---:|:---:|:---:|:---:|
+| Swin-T | 28.3 | 4.5 | 10.51 | 2.24 | 1.41 | 0.98 | 81.18 |
+| ResNet-18 | 11.7 | 1.8 | 3.12 | 0.60 | 0.41 | 0.28 | 70.6 |
+| ResNet-34 |21.8|3.7|5.57|0.97|0.77|0.49|75.5|
+| ResNet-50 |25.6|4.1|7.64|1.23|0.80|0.54|79.8|
+| ResNet-101 |45.0|8.0|-|2.34|1.58|1.04|81.3|
+| ResNet-152 |60.2|11.5|-|3.40|2.30|1.49|81.8|
+| **VanillaNet-5** | 15.5 | 5.2 | 1.61 |0.47|0.33|0.27| 72.49 |
+| **VanillaNet-6** | 32.5 | 6.0 | 2.01 |0.61|0.40|0.33| 76.36 |
+| **VanillaNet-7** | 32.8 | 6.9 | 2.27 | 0.88 |0.47|0.39|77.98 |
+| **VanillaNet-8** | 37.1 | 7.7 | 2.56 |0.96|0.52|0.45| 79.13 |
+| **VanillaNet-9** | 41.4 | 8.6 | 2.91 |1.02|0.58|0.49| 79.87 |
+| **VanillaNet-10** | 45.7 | 9.4 | 3.24 |1.11|0.63|0.53| 80.57 |
+| **VanillaNet-11** | 50.0 | 10.3 | 3.59 | 1.17 |0.69|0.58| 81.08 |
+| **VanillaNet-12** | 54.3 | 11.1 | 3.82 |1.26|0.75|0.62| 81.55 |
+| **VanillaNet-13** | 58.6 | 11.9 | 4.26 |1.33|0.82|0.67| 82.05 |
 
 ## Downstream Tasks
 | Framework | Backbone | FLOPs(G) | #params(M) | FPS | AP<sup>b</sup> | AP<sup>m</sup> |
