@@ -252,7 +252,7 @@ This project is released under the MIT license. Please see the [LICENSE](License
 
 ### Instruction pdf
 
-A instruction pdf (Chinese version) can be found [here](https://github.com/huawei-noah/VanillaNet/pic/vanillanet.pdf)
+A instruction pdf (Chinese version) can be found [here](https://github.com/huawei-noah/VanillaNet/blob/main/pic/vanillanet.pdf)
 
 ### Citation
 If our work is useful for your research, please consider citing:
