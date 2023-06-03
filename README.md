@@ -23,10 +23,11 @@ VanillaNet is an innovative neural network architecture that focuses on **simpli
 <img src="pic/depth.PNG" width="360px"/> <img src="pic/speed.PNG" width="300px"/>
 
 VanillaNet achieves comparable performance to prevalent computer vision foundation models, yet boasts a **reduced depth and enhanced inference speed**:
-- **9-layers'** VanillaNet achieves about **80%** Top-1 accuracy with **3.59ms**, over **100%** speed increase compared to ResNet-50 (**7.64ms**).
-- **13 layers'** VanillaNet achieves about **83%** Top-1 accuracy with **9.72ms**, over **100%** speed increase compared to Swin-T (**20.25ms**).
+- **11-layers'** VanillaNet achieves about **81%** Top-1 accuracy with **3.59ms**, over **100%** speed increase compared to ResNet-50 (**7.64ms**).
+- **13 layers'** VanillaNet (1.5x*) achieves about **83%** Top-1 accuracy with **9.72ms**, over **100%** speed increase compared to Swin-S (**20.25ms**).
+- With tensorRT FP32 on A100, **11 layers'** VanillaNet achieves about **81%** Top-1 accuracy with **0.69ms**, over **100%** speed increase compared to Swin-T (**1.41ms**) and ResNet-101 (**1.58ms**).
 
-| name | Params(M) | FLOPs(B) | Lacency(ms) <br/>Pytorch <br/>A100 | Lacency(ms) <br/>MindSpore <br/>Ascend 910 | Lacency(ms) <br/>TRT FP32 <br/>A100 | Lacency(ms) <br/>TRT FP16 <br/>A100 | Acc(%) |
+| name | Params(M) | FLOPs(B) | Latency(ms) <br/>Pytorch <br/>A100 | Latency(ms) <br/>MindSpore <br/>Ascend 910 | Latency(ms) <br/>TRT FP32 <br/>A100 | Latency(ms) <br/>TRT FP16 <br/>A100 | Acc(%) |
 |:---:|:---:|:---:|:---:| :---:|:---:|:---:|:---:|
 | Swin-T | 28.3 | 4.5 | 10.51 | 2.24 | 1.41 | 0.98 | 81.18 |
 | ResNet-18 | 11.7 | 1.8 | 3.12 | 0.60 | 0.41 | 0.28 | 70.6 |
