@@ -46,13 +46,8 @@ VanillaNet achieves comparable performance to prevalent computer vision foundati
 | **VanillaNet-13** | 58.6 | 11.9 | 4.26 |1.33|0.82|0.67| 82.05 |
 
 ## Downstream Tasks
-| Framework | Backbone | FLOPs(G) | #params(M) | FPS | AP<sup>b</sup> | AP<sup>m</sup> |
-|:---:|:---:|:---:|:---:| :---:|:---:|:---:|
-| RetinaNet | Swin-T | 245 | 38.5 | 27.5 | 41.5 | - |
-|  | VanillaNet-13 | 397 | 74.6 | 29.8 | 41.8 | - |
-| Mask RCNN | [Swin-T](https://github.com/open-mmlab/mmdetection/tree/main/configs/swin) | 267 | 47.8 | 28.2 | 42.7 | 39.3 |
-|  | VanillaNet-13 | 421 | 76.3 | 32.6 | 42.9 | 39.6 |
 
+Please refer to [this page](https://github.com/huawei-noah/VanillaNet/object_detection).
 
 VanillaNet achieves a higher Frames Per Second (FPS) in **detection** and **segmentation** tasks.
 
@@ -63,8 +58,8 @@ VanillaNet achieves a higher Frames Per Second (FPS) in **detection** and **segm
 - [x] ImageNet-1K Training Code of VanillaNet-5 to VanillaNet-10  
 - [x] ImageNet-1K Pretrained Weights of VanillaNet-5 to VanillaNet-10
 - [ ] ImageNet-1K Training Code of VanillaNet-11 to VanillaNet-13
-- [ ] ImageNet-1K Pretrained Weights of VanillaNet-11 to VanillaNet-13
-- [ ] Downstream Transfer (Detection, Segmentation) Code
+- [x] ImageNet-1K Pretrained Weights of VanillaNet-11 to VanillaNet-13
+- [x] Downstream Transfer (Detection, Segmentation) Code
 
 ## Results and Pre-trained Models
 ### ImageNet-1K trained models
@@ -77,11 +72,11 @@ VanillaNet achieves a higher Frames Per Second (FPS) in **detection** and **segm
 | VanillaNet-8 | 37.1 | 7.7 | 2.56 | 79.13 | [model](https://drive.google.com/file/d/1XNhe2LcNMjNZqBysGNvZLSsbKTrqWTw7/view?usp=sharing) |
 | VanillaNet-9 | 41.4 | 8.6 | 2.91 | 79.87 | [model](https://drive.google.com/file/d/1DKifDZR5FqrEr7ICLPzuniQzu03hnnF_/view?usp=sharing) |
 | VanillaNet-10 | 45.7 | 9.4 | 3.24 | 80.57 | [model](https://drive.google.com/file/d/1JskZU6otH_6NVXJHNe-74pEaZRVPxXlP/view?usp=sharing) |
-| VanillaNet-11 | 50.0 | 10.3 | 3.59 | 81.08 | - |
-| VanillaNet-12 | 54.3 | 11.1 | 3.82 | 81.55 | - |
-| VanillaNet-13 | 58.6 | 11.9 | 4.26 | 82.05 | - |
-| VanillaNet-13-1.5x | 127.8 | 26.5 | 7.83 | 82.53 | - |
-| VanillaNet-13-1.5x&dagger; | 127.8 | 48.9 | 9.72 | 83.11 | - |
+| VanillaNet-11 | 50.0 | 10.3 | 3.59 | 81.08 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_11.pth) |
+| VanillaNet-12 | 54.3 | 11.1 | 3.82 | 81.55 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_12.pth) |
+| VanillaNet-13 | 58.6 | 11.9 | 4.26 | 82.05 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_13.pth) |
+| VanillaNet-13-1.5x | 127.8 | 26.5 | 7.83 | 82.53 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_13_x1_5.pth) |
+| VanillaNet-13-1.5x&dagger; | 127.8 | 48.9 | 9.72 | 83.11 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_13_x1_5_ada_pool.pth) |
 
 ## Installation
 

@@ -14,19 +14,22 @@ from timm.models.registry import register_model
 class activation(nn.ReLU):
     def __init__(self, dim, act_num=3, deploy=False):
         super(activation, self).__init__()
-        self.deploy = deploy
-        self.weight = torch.nn.Parameter(torch.randn(dim, 1, act_num*2 + 1, act_num*2 + 1))
-        self.bias = None
-        self.bn = nn.BatchNorm2d(dim, eps=1e-6)
-        self.dim = dim
         self.act_num = act_num
+        self.deploy = deploy
+        self.dim = dim
+        self.weight = torch.nn.Parameter(torch.randn(dim, 1, act_num*2 + 1, act_num*2 + 1))
+        if deploy:
+            self.bias = torch.nn.Parameter(torch.zeros(dim))
+        else:
+            self.bias = None
+            self.bn = nn.BatchNorm2d(dim, eps=1e-6)
         weight_init.trunc_normal_(self.weight, std=.02)
 
     def forward(self, x):
         if self.deploy:
             return torch.nn.functional.conv2d(
                 super(activation, self).forward(x), 
-                self.weight, self.bias, padding=(self.act_num*2 + 1)//2, groups=self.dim)
+                self.weight, self.bias, padding=self.act_num, groups=self.dim)
         else:
             return self.bn(torch.nn.functional.conv2d(
                 super(activation, self).forward(x),
@@ -74,7 +77,7 @@ class Block(nn.Module):
         else:
             self.pool = nn.Identity() if stride == 1 else nn.AdaptiveMaxPool2d((ada_pool, ada_pool))
 
-        self.act = activation(dim_out, act_num)
+        self.act = activation(dim_out, act_num, deploy=self.deploy)
  
     def forward(self, x):
         if self.deploy:
@@ -120,14 +123,15 @@ class VanillaNet(nn.Module):
                  drop_rate=0, act_num=3, strides=[2,2,2,1], deploy=False, ada_pool=None, **kwargs):
         super().__init__()
         self.deploy = deploy
+        stride, padding = (4, 0) if not ada_pool else (3, 1)
         if self.deploy:
             self.stem = nn.Sequential(
-                nn.Conv2d(in_chans, dims[0], kernel_size=4, stride=4),
-                activation(dims[0], act_num)
+                nn.Conv2d(in_chans, dims[0], kernel_size=4, stride=stride, padding=padding),
+                activation(dims[0], act_num, deploy=self.deploy)
             )
         else:
             self.stem1 = nn.Sequential(
-                nn.Conv2d(in_chans, dims[0], kernel_size=4, stride=4),
+                nn.Conv2d(in_chans, dims[0], kernel_size=4, stride=stride, padding=padding),
                 nn.BatchNorm2d(dims[0], eps=1e-6),
             )
             self.stem2 = nn.Sequential(
@@ -304,6 +308,6 @@ def vanillanet_13_x1_5_ada_pool(pretrained=False, in_22k=False, **kwargs):
     model = VanillaNet(
         dims=[128*6, 128*6, 256*6, 512*6, 512*6, 512*6, 512*6, 512*6, 512*6, 512*6, 1024*6, 1024*6],
         strides=[1,2,2,1,1,1,1,1,1,2,1],
-        ada_pool=[0,40,20,0,0,0,0,0,0,10,0],
+        ada_pool=[0,38,19,0,0,0,0,0,0,10,0],
         **kwargs)
     return model
