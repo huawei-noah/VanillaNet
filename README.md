@@ -47,7 +47,7 @@ VanillaNet achieves comparable performance to prevalent computer vision foundati
 
 ## Downstream Tasks
 
-Please refer to [this page]([https://github.com/huawei-noah/VanillaNet/object_detection](https://github.com/huawei-noah/VanillaNet/tree/main/object_detection)).
+Please refer to [this page](https://github.com/huawei-noah/VanillaNet/tree/main/object_detection).
 
 VanillaNet achieves a higher Frames Per Second (FPS) in **detection** and **segmentation** tasks.
 
