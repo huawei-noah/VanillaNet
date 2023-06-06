@@ -20,9 +20,8 @@ if __name__ == "__main__":
     size = 224
     data_loader_val = create_loader(dataset_val, input_size=size, batch_size=1, is_training=False, use_prefetcher=False)
     
-    net = vanillanet_5().cuda()
+    net = vanillanet_5(deploy=True).cuda()
     net.eval()
-    net.switch_to_deploy()
     print(net)
     for img, target in data_loader_val:
         img = img.cuda()
