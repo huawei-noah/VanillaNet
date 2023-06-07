@@ -66,7 +66,7 @@ VanillaNet achieves a higher Frames Per Second (FPS) in **detection** and **segm
 
 | name | #params(M) | FLOPs(B) | Lacency(ms) | Acc(%) | model |
 |:---:|:---:|:---:|:---:| :---:|:---:|
-| VanillaNet-5 | 15.5 | 5.2 | 1.61 | 72.49 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_5.pth |
+| VanillaNet-5 | 15.5 | 5.2 | 1.61 | 72.49 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_5.pth) |
 | VanillaNet-6 | 32.5 | 6.0 | 2.01 | 76.36 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_6.pth) |
 | VanillaNet-7 | 32.8 | 6.9 | 2.27 | 77.98 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_7.pth) |
 | VanillaNet-8 | 37.1 | 7.7 | 2.56 | 79.13 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_8.pth) |
