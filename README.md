@@ -66,12 +66,12 @@ VanillaNet achieves a higher Frames Per Second (FPS) in **detection** and **segm
 
 | name | #params(M) | FLOPs(B) | Lacency(ms) | Acc(%) | model |
 |:---:|:---:|:---:|:---:| :---:|:---:|
-| VanillaNet-5 | 15.5 | 5.2 | 1.61 | 72.49 | [model](https://drive.google.com/file/d/1yqTxU7zpaE-XhFeVFq1TbmBmMSfhTKcR/view?usp=sharing) |
-| VanillaNet-6 | 32.5 | 6.0 | 2.01 | 76.36 | [model](https://drive.google.com/file/d/128ZGebHeDxWbUlLD24HfDUBUHOVTMNX6/view?usp=sharing) |
-| VanillaNet-7 | 32.8 | 6.9 | 2.27 | 77.98 | [model](https://drive.google.com/file/d/184kFuTZFRo3hFUQ8-sqSETebD3j3vK_v/view?usp=sharing) |
-| VanillaNet-8 | 37.1 | 7.7 | 2.56 | 79.13 | [model](https://drive.google.com/file/d/1XNhe2LcNMjNZqBysGNvZLSsbKTrqWTw7/view?usp=sharing) |
-| VanillaNet-9 | 41.4 | 8.6 | 2.91 | 79.87 | [model](https://drive.google.com/file/d/1DKifDZR5FqrEr7ICLPzuniQzu03hnnF_/view?usp=sharing) |
-| VanillaNet-10 | 45.7 | 9.4 | 3.24 | 80.57 | [model](https://drive.google.com/file/d/1JskZU6otH_6NVXJHNe-74pEaZRVPxXlP/view?usp=sharing) |
+| VanillaNet-5 | 15.5 | 5.2 | 1.61 | 72.49 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_5.pth |
+| VanillaNet-6 | 32.5 | 6.0 | 2.01 | 76.36 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_6.pth) |
+| VanillaNet-7 | 32.8 | 6.9 | 2.27 | 77.98 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_7.pth) |
+| VanillaNet-8 | 37.1 | 7.7 | 2.56 | 79.13 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_8.pth) |
+| VanillaNet-9 | 41.4 | 8.6 | 2.91 | 79.87 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_9.pth) |
+| VanillaNet-10 | 45.7 | 9.4 | 3.24 | 80.57 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_10.pth) |
 | VanillaNet-11 | 50.0 | 10.3 | 3.59 | 81.08 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_11.pth) |
 | VanillaNet-12 | 54.3 | 11.1 | 3.82 | 81.55 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_12.pth) |
 | VanillaNet-13 | 58.6 | 11.9 | 4.26 | 82.05 | [model](https://github.com/huawei-noah/VanillaNet/releases/download/ckpt/vanillanet_13.pth) |
